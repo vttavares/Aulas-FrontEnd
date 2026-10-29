@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Restaurante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #0A0A0A;
+      color: #ffffff; /* Dourado */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #5d17a7;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    section {
+      border-bottom: 1px solid #862586;
+      padding: 20px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      background-color: #121212;
+      color: #DAA520;
+      border: 1px solid #4b4b4a;
+      border-radius: 4px;
+    }
+
+    input::placeholder {
+      color: #606060;
+    }
+
+    
+    img {
+      max-width: 100%;
+      max-height: 300px;
+      width: auto;
+      object-fit: cover;
+      display: block;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ffffff;
+    }
+
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: #76746c;
+      color: #000000;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Vessani gay</h1>
+
+  <header>
+    <h1>Restaurante - Vitor a passarinho</h1>
+    <nav>
+      <a href="#inicio">Início</a> |
+      <a href="#cardapio">Cardápio</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section>
+    <input type="text" placeholder="Buscar">
+  </section>
+
+  <section id="inicio">
+    <h2>Destaque</h2>
+    <p>Onde a comida é feita com verdade</p>
+    <img src="https://i.pinimg.com/736x/1c/5b/f7/1c5bf733c36cf18a2ecc7427be625ef2.jpg" alt="Foto 1">
+    <img src="https://i.pinimg.com/1200x/60/17/6e/60176e9db4eac26ae9a307656b3b76eb.jpg" alt="Foto 2">
+  </section>
+
+  <section>
+    <h2>Horários</h2>
+    <p>Segunda a sexta: 8h às 22h</p>
+    <p>Sábado e domingo: 12h às 23h</p>
+  </section>
+
+  <section>
+    <h2>Localização</h2>
+    <p>Rua Dos favelados, 267 - Morro do dendê, Rio De Janeiro - RJ</p>
+  </section>
+
+  <section id="cardapio">
+    <h2>Cardápio</h2>
+    <img src="https://i.pinimg.com/736x/a7/a8/86/a7a886f25d65eb0eeb190107bf07cdc6.jpg" alt="Prato 1">
+    <p>Prato 1 - R$ 72,00</p>
+    <img src="https://i.pinimg.com/1200x/70/2d/e6/702de6afe94266e6fd4da0d1dc7caf24.jpg" alt="Prato 2">
+    <p>Prato 2 - R$ 29,99</p>
+    <img src="https://i.pinimg.com/736x/67/ba/aa/67baaa19b9be515b47548146f6a9e81b.jpg" alt="Foto do cardápio">
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Telefone: (21) 3214-6125</p>
+    <p>Email: restaurantevitorapassarinho@gmail.com</p>
+    <img src="https://i.pinimg.com/1200x/1b/21/c0/1b21c065cd6d859f3c546eaf5b60d40a.jpg" alt="Foto do restaurante">
+  </section>
+
 </body>
 </html>
